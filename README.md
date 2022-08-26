@@ -1,1 +1,0 @@
-# Iniciando el curso
