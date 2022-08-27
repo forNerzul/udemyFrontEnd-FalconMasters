@@ -8,14 +8,21 @@
 </head>
 <body>
     <script>
-        var nombre = "Sergio";
-        var apellido = "Garcia";
-        var numero = 30;
-        var numero2 = 2;
+        // hay varias formas de declarar una variable
+        var nombre = "Sergio"; // declaramos la variable con la palabra reservada "var" asignamos un valor a la variable nombre con el operador "="
+        
+        var apellido; // declaramos la variable sin asignarle un valor
+        apellido = "Garcia"; // asignamos un valor a la variable apellido previamente declarada
 
-        // alert(numero + numero2);
-        // document.write(numero + numero2);
-        console.log("Hola consola, soy " + nombre + " " + apellido);  
+        // otra forma de declarar varias variables a la vez
+        var numero,
+            numero2;
+        numero = 30;
+        numero2 = 2;
+
+        // alert(numero + numero2); // podemos utilizar la funcion alert para mostrar un mensaje en pantalla
+        // document.write(numero + numero2); // podemos utilizar la funcion document.write para mostrar un mensaje en pantalla con el html
+        console.log("Hola consola, soy " + nombre + " " + apellido);  // podemos utilizar la funcion console.log para mostrar un mensaje en la consola del navegador.
     </script>
 </body>
 </html>
