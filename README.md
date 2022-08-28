@@ -1,4 +1,14 @@
 # Fundamentos de JavaScript
+- [Fundamentos de JavaScript](#fundamentos-de-javascript)
+  - [Introducción](#introducción)
+    - [Empezamos con JavaScript](#empezamos-con-javascript)
+  - [Variables](#variables)
+  - [Metodos de visualizacion de informacion](#metodos-de-visualizacion-de-informacion)
+    - [Funcion `alert()`](#funcion-alert)
+    - [Funcion `console.log()`](#funcion-consolelog)
+    - [Funcion `document.write()`](#funcion-documentwrite)
+  - [Tipos de datos](#tipos-de-datos)
+  - [Operadores](#operadores)
 ## Introducción
 Teniendo en cuenta que `HTML` es un lenguaje de enmarcado que nos va a servir para dar estructura a la informacion que queremos presentar mediante una pagina web y que `CSS` nos ayuda a dar estilos a esa informacion de tal forma que podamos mostrar de una forma estetica y maquetar nuestra web, `JavaScript` es un lenguaje de programación que se puede usar para volver interactiva nuestra web, con `JavaScript` podemos agruegar logica y dinamismo a nuestro contenido del lado del cliente, agregar botones, validar formularios, cambiar el color de texto, el color de fondo, y muchas cosas mas, basicamente sin `JavaScript` nuestra web seria estatica y no podriamos cambiar el contenido.
 
@@ -100,3 +110,44 @@ Esto se ve asi:
 
 ## Tipos de datos
 Los tipos de datos que podemos utilizar en JavaScript son:
+  - Numericos
+  - Cadenas de texto
+  - Arreglos
+  - Funciones
+  - Booleanos
+  - Objetos
+
+```html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<!-- Aqui va nuestro codigo html -->
+<script>
+    var numero = 7; // variable numerica
+    var decimal = 7.5; // variable numerica decimal
+
+    var cadena = "Hola"; // variable cadena de texto
+    var cadena2 = '5'; // variable cadena de texto conteniendo un numero
+
+    var arreglo = [1,2,3,4,5]; // variable arreglo
+
+    var saludo = function(){ 
+            console.log("Hola");
+    } // variable funcion
+
+    booleano = true; // variable booleana
+
+    objeto = {
+        nombre: "Juan",
+        apellido: "Perez",
+        edad: 25
+    }; // variable objeto
+</script>   
+</body>
+</html>
+```
+
+## Operadores
