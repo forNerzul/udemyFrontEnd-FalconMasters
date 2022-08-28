@@ -72,7 +72,8 @@ A continuacion veremos los metodos de visualizacion de informacion de las variab
 La funcion `alert()` nos permite mostrar un mensaje en una ventana emergente.
 
 ```javascript
-alert("Hola mundo soy un alert");
+var variable = "Hola mundo soy un alert";
+alert(variable);
 ```
 Esto se ve asi:
 ![Funcion alert](./9_javaScript/img/funcionAlert.png)
@@ -81,7 +82,10 @@ Esto se ve asi:
 La funcion `console.log()` nos permite mostrar un mensaje en la consola del navegador.
 
 ```javascript
-console.log("Hola mundo soy un console.log");
+var variable = "Hola mundo soy un console.log";
+console.log(variable);
 ```
 Esto se ve asi:
 ![Funcion console.log](./9_javaScript/img/funcionConsoleLog.png)
+
+### Funcion `document.write()`
