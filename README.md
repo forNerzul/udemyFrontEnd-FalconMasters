@@ -83,3 +83,5 @@ La funcion `console.log()` nos permite mostrar un mensaje en la consola del nave
 ```javascript
 console.log("Hola mundo soy un console.log");
 ```
+Esto se ve asi:
+![Funcion console.log](./9_javaScript/img/funcionConsoleLog.png)
