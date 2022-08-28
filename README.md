@@ -9,6 +9,13 @@
     - [Funcion `document.write()`](#funcion-documentwrite)
   - [Tipos de datos](#tipos-de-datos)
   - [Operadores](#operadores)
+    - [Operador de asignación](#operador-de-asignación)
+    - [Operadores aritméticos](#operadores-aritméticos)
+      - [Suma y Concatenación](#suma-y-concatenación)
+      - [Resta](#resta)
+      - [Multiplicación](#multiplicación)
+      - [División](#división)
+      - [Modulo](#modulo)
 ## Introducción
 Teniendo en cuenta que `HTML` es un lenguaje de enmarcado que nos va a servir para dar estructura a la informacion que queremos presentar mediante una pagina web y que `CSS` nos ayuda a dar estilos a esa informacion de tal forma que podamos mostrar de una forma estetica y maquetar nuestra web, `JavaScript` es un lenguaje de programación que se puede usar para volver interactiva nuestra web, con `JavaScript` podemos agruegar logica y dinamismo a nuestro contenido del lado del cliente, agregar botones, validar formularios, cambiar el color de texto, el color de fondo, y muchas cosas mas, basicamente sin `JavaScript` nuestra web seria estatica y no podriamos cambiar el contenido.
 
@@ -151,3 +158,94 @@ Los tipos de datos que podemos utilizar en JavaScript son:
 ```
 
 ## Operadores
+Los operadores son un conjunto de funciones que nos permiten realizar operaciones matematicas, logicas, etc.
+- Asignación
+- Matemáticos o aritméticos
+- Incremento y decremento
+- Operadores lógicos y de comparación
+
+### Operador de asignación
+El operador de asignación es el `=` y nos permite asignar un valor a una variable.
+
+```javascript
+var numero = 7;
+```
+### Operadores aritméticos
+Los operadores aritméticos son los siguientes:
+- Suma
+- Resta
+- multiplicación
+- división
+- modulo
+
+#### Suma y Concatenación
+El operador de suma es el `+` y nos permite sumar dos variables.  
+Si sumamos 2 variables de tipo numerico, el resultado sera una variable de tipo numerico con el valor de la suma de ambas variables.  
+Si sumamos 2 variables de tipo cadena de texto, el resultado sera una variable de tipo cadena de texto con el valor de la concatenacion de ambas variables.
+
+```javascript
+var numero1 = 7;
+var numero2 = 5;
+var suma = numero1 + numero2; // suma de las variables
+```
+> El resultado de la suma es `12`
+
+> **_NOTA:_**  Solo podemos sumar variables con valores numericos ya sean enteras o decimales entre si, no podemos sumar una variable numerica con una cadena de texto.  
+> Lo que si podemos hacer es sumar una variable de cadena de texto con otra variable de cadena de texto. A esto se le conoce como concatenación de cadenas de texto.
+
+Ejemplo de concatenación de cadenas de texto:
+
+```javascript
+var nombre = "Juan"; // variable cadena de texto
+var apellido = "Perez"; // variable cadena de texto
+var nombreCompleto = nombre + " " + apellido; // concatenacion de cadenas de texto
+```
+> El resultado de la concatenación es `Juan Perez`
+
+```javascript
+var numero1 = "7"; // variable cadena de texto
+var numero2 = "5"; // variable cadena de texto
+var suma = numero1 + numero2; // concatenacion de cadenas de texto
+```
+> El resultado de la suma es `75` debido a la concatenacion (el resultado es una cadena de texto)
+
+#### Resta
+El operador de resta es el `-` y nos permite restar dos variables.  
+No podemos restar una variable de tipo cadena de texto con una variable de tipo numerica, ni restar cadenas de texto entre si.
+
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var resta = numero1 - numero2; // resta de las variables
+```
+> El resultado de la resta es `2`
+
+#### Multiplicación
+El operador de multiplicación es el `*` y nos permite multiplicar dos variables.
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var multiplicacion = numero1 * numero2; // multiplicacion de las variables
+```
+> El resultado de la multiplicación es `35`
+
+#### División
+El operador de división es el `/` y nos permite dividir dos variables.
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var division = numero1 / numero2; // division de las variables
+```
+> El resultado de la division es `1.2`
+
+#### Modulo
+El operador de modulo es el `%` y nos permite obtener el residuo de una division.
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var modulo = numero1 % numero2; // modulo de las variables
+```
+> El resultado de la modulo es `2`
+
+
+
