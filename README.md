@@ -18,6 +18,10 @@
       - [Modulo](#modulo)
       - [Exponenciacion](#exponenciacion)
     - [Operadores de incremento y decremento](#operadores-de-incremento-y-decremento)
+      - [Incremento](#incremento)
+      - [Decremento](#decremento)
+    - [Operadores logicos y de comparacion](#operadores-logicos-y-de-comparacion)
+      - [Operador igual a](#operador-igual-a)
 ## Introducción
 Teniendo en cuenta que `HTML` es un lenguaje de enmarcado que nos va a servir para dar estructura a la informacion que queremos presentar mediante una pagina web y que `CSS` nos ayuda a dar estilos a esa informacion de tal forma que podamos mostrar de una forma estetica y maquetar nuestra web, `JavaScript` es un lenguaje de programación que se puede usar para volver interactiva nuestra web, con `JavaScript` podemos agruegar logica y dinamismo a nuestro contenido del lado del cliente, agregar botones, validar formularios, cambiar el color de texto, el color de fondo, y muchas cosas mas, basicamente sin `JavaScript` nuestra web seria estatica y no podriamos cambiar el contenido.
 
@@ -260,7 +264,7 @@ var exponenciacion = numero1 ** numero2; // exponenciacion de las variables
 
 ### Operadores de incremento y decremento
 Los operadores de incremento y decremento son los siguientes:
-- #### Incremento
+#### Incremento
 El operador de incremento es el `++` y nos permite incrementar una variable en uno.  
 
 Tenemos 2 formas de incrementar una variable:
@@ -280,5 +284,47 @@ console.log(numero); // imprimimos el resultado de la operacion
 ```
 > El resultado de la variable incremento es `7` debido a que al escribir `incremento = numero++` la variable numero aumenta en uno despues de asignar el valor a la variable `incremento`.  
 > si hacemos `console.log(numero);` el resultado es `8` debido a que al escribir `numero++` la variable numero aumenta en uno despues de asignar el valor a la variable `incremento`.
+#### Decremento
+El operador de decremento es el `--` y nos permite decrementar una variable en uno.  
+Los mismos principios del operador de incremento se aplican al operador de decremento.
+- Predecremento
+```javascript
+var numero = 7; // variable numerica
+decremento = --numero; // preincremento de la variable
+console.log(decremento); // imprimimos el resultado de la operacion
+```
+> El resultado de la variable decremento es `6` debido a que al escribir `decremento = --numero` la variable numero decrementa en uno antes de asignar el valor a la variable `decremento`.
+
+- Posdecremento
+```javascript
+var numero = 7; // variable numerica
+decremento = numero--; // posincremento de la variable
+console.log(decremento); // imprimimos el resultado de la operacion
+console.log(numero); // imprimimos el resultado de la operacion
+```
+> El resultado de la variable decremento es `7` debido a que al escribir `decremento = numero--` la variable numero decrementa en uno despues de asignar el valor a la variable `decremento`.  
+> Si hacemos `console.log(numero);` el resultado es `6` debido a que al escribir `numero--` la variable numero decrementa en uno despues de asignar el valor a la variable `decremento`.
+
+### Operadores logicos y de comparacion
+Los operadores logicos son los siguientes:
+#### Operador igual a
+El operador igual a es el `==` y nos permite comparar dos variables su resultado puede ser `true` o `false`.
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var igual = numero1 == numero2; // igual a las variables
+console.log(igual); // imprimimos el resultado de la operacion
+```
+> El resultado de la comparacion es `false` debido a que las variables no son iguales por que 5 no es igual a 7.
+
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = "7"; // variable cadena de texto
+var igual = numero1 == numero2; // igual a las variables
+console.log(igual); // imprimimos el resultado de la operacion
+```
+> El resultado de la comparacion es `true` debido a que las variables son iguales por que "7" es igual a 7. Esto nos indica que incluso si las variables son de tipo cadena de texto, pueden ser comparadas con numericas.
+
+
 
 
