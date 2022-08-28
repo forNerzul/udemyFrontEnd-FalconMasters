@@ -270,8 +270,15 @@ var numero = 7; // variable numerica
 incremento = ++numero; // preincremento de la variable
 console.log(incremento); // imprimimos el resultado de la operacion
 ```
-> El resultado de la variable incremento es `7`
-- Postincremento
-
+> El resultado de la variable incremento es `8` debido a que al escribir `incremento = ++numero` la variable numero aumenta en uno antes de asignar el valor a la variable `incremento`.
+- Posincremento
+```javascript
+var numero = 7; // variable numerica
+incremento = numero++; // posincremento de la variable
+console.log(incremento); // imprimimos el resultado de la operacion
+console.log(numero); // imprimimos el resultado de la operacion
+```
+> El resultado de la variable incremento es `7` debido a que al escribir `incremento = numero++` la variable numero aumenta en uno despues de asignar el valor a la variable `incremento`.  
+> si hacemos `console.log(numero);` el resultado es `8` debido a que al escribir `numero++` la variable numero aumenta en uno despues de asignar el valor a la variable `incremento`.
 
 
