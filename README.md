@@ -11,9 +11,10 @@ Lo primero que debemos hacer es crear un archivo `HTML` con la estructura basica
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Document</title>
+    <title>Document</title>
 </head>
 <body>
+    <!-- Aqui va nuestro codigo html --> 
 
 <script>
     // Aqui va el codigo de JavaScript
@@ -21,4 +22,32 @@ Lo primero que debemos hacer es crear un archivo `HTML` con la estructura basica
 </script>
 </body>
 </html>
+```
+* Mediante el uso de la etiqueta `<script>` pero utilizando el atributo `src`:  
+    Ejemplo: `<script src="js/script.js"></script>`
+```html 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-- Aqui va nuestro codigo html --> 
+</body>
+</html>
+```
+## Variables
+Las variables son contenedores en donde guardamos informacion que podemos utilizar en nuestro codigo de JavaScript. 
+
+Para crear una variable debemos utilizar la palabra reservada `var` (existen otro tipo de variables en las cuales utilizaremos `let` o `const`) y luego el nombre de la variable, para asignarle un valor a la variable debemos utilizar la palabra reservada `=` y luego el valor que queremos asignarle a la variable.  
+Ej.:
+```javascript
+var nombre = "Juan";
+```
+Ademas podemos hacerlo en 2 fases, la primera es crear la variable y la segunda es asignarle un valor a la variable.
+
+```javascript
+var nombre;
+nombre = "Juan";
 ```
