@@ -75,4 +75,11 @@ La funcion `alert()` nos permite mostrar un mensaje en una ventana emergente.
 alert("Hola mundo soy un alert");
 ```
 Esto se ve asi:
-![asd](./9_javaScript/img/funcionAlert.png)
+![Funcion alert](./9_javaScript/img/funcionAlert.png)
+
+### Funcion `console.log()`
+La funcion `console.log()` nos permite mostrar un mensaje en la consola del navegador.
+
+```javascript
+console.log("Hola mundo soy un console.log");
+```
