@@ -16,6 +16,8 @@
       - [Multiplicación](#multiplicación)
       - [División](#división)
       - [Modulo](#modulo)
+      - [Exponenciacion](#exponenciacion)
+    - [Operadores de incremento y decremento](#operadores-de-incremento-y-decremento)
 ## Introducción
 Teniendo en cuenta que `HTML` es un lenguaje de enmarcado que nos va a servir para dar estructura a la informacion que queremos presentar mediante una pagina web y que `CSS` nos ayuda a dar estilos a esa informacion de tal forma que podamos mostrar de una forma estetica y maquetar nuestra web, `JavaScript` es un lenguaje de programación que se puede usar para volver interactiva nuestra web, con `JavaScript` podemos agruegar logica y dinamismo a nuestro contenido del lado del cliente, agregar botones, validar formularios, cambiar el color de texto, el color de fondo, y muchas cosas mas, basicamente sin `JavaScript` nuestra web seria estatica y no podriamos cambiar el contenido.
 
@@ -246,6 +248,30 @@ var numero2 = 5; // variable numerica
 var modulo = numero1 % numero2; // modulo de las variables
 ```
 > El resultado de la modulo es `2`
+
+#### Exponenciacion
+El operador de exponenciacion es el `**` y nos permite elevar una variable a una potencia.
+```javascript
+var numero1 = 7; // variable numerica
+var numero2 = 5; // variable numerica
+var exponenciacion = numero1 ** numero2; // exponenciacion de las variables
+```
+> El resultado de la exponenciacion es `16807`
+
+### Operadores de incremento y decremento
+Los operadores de incremento y decremento son los siguientes:
+- #### Incremento
+El operador de incremento es el `++` y nos permite incrementar una variable en uno.  
+
+Tenemos 2 formas de incrementar una variable:
+- Preincremento
+```javascript
+var numero = 7; // variable numerica
+incremento = ++numero; // preincremento de la variable
+console.log(incremento); // imprimimos el resultado de la operacion
+```
+> El resultado de la variable incremento es `7`
+- Postincremento
 
 
 
