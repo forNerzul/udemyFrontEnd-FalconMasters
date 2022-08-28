@@ -43,11 +43,36 @@ Las variables son contenedores en donde guardamos informacion que podemos utiliz
 Para crear una variable debemos utilizar la palabra reservada `var` (existen otro tipo de variables en las cuales utilizaremos `let` o `const`) y luego el nombre de la variable, para asignarle un valor a la variable debemos utilizar la palabra reservada `=` y luego el valor que queremos asignarle a la variable.  
 Ej.:
 ```javascript
+// Creacion y asignacion de una variable
 var nombre = "Juan";
 ```
 Ademas podemos hacerlo en 2 fases, la primera es crear la variable y la segunda es asignarle un valor a la variable.
 
 ```javascript
+// creacion de la variable
 var nombre;
+// asignacion de la variable
 nombre = "Juan";
 ```
+
+Tambien podemos crear varias variables en una sola linea, para lo cual utilizaremos la palabra reservada `var` y luego el nombre de la variable y luego una coma y luego el nombre de otras variables y asignar su valor posteriormente.
+
+```javascript
+// creacion de variables
+var nombre, apellido;
+// asignacion de valores a las variables
+nombre = "Juan";
+apellido = "Perez";
+```
+
+## Metodos de visualizacion de informacion
+A continuacion veremos los metodos de visualizacion de informacion de las variables que podemos utilizar para mostrar informacion en nuestra pagina web, o `consola` del `JavaScript`.
+
+### Funcion `alert()`
+La funcion `alert()` nos permite mostrar un mensaje en una ventana emergente.
+
+```javascript
+alert("Hola mundo soy un alert");
+```
+Esto se ve asi:
+![asd](./9_javaScript/img/funcionAlert.png)
