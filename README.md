@@ -89,3 +89,14 @@ Esto se ve asi:
 ![Funcion console.log](./9_javaScript/img/funcionConsoleLog.png)
 
 ### Funcion `document.write()`
+La funcion `document.write()` nos permite mostrar un mensaje en la pagina web escribiendo directamente en el `HTML`.
+
+```javascript
+var variable = "Hola mundo soy un document.write";
+document.write(variable);
+```
+Esto se ve asi:
+![Funcion document.write](./9_javaScript/img/funcionDocumentWrite.png)
+
+## Tipos de datos
+Los tipos de datos que podemos utilizar en JavaScript son:
